@@ -1,18 +1,19 @@
 {
-  "name": "vue-jstree",
+  "name": "@a.abunada/vue-jstree-rtl",
   "version": "2.1.6",
-  "description": "a tree plugin for vue2",
+  "description": "a rtl tree plugin for vue2",
   "keywords": [
     "vue2",
-    "tree"
+    "tree",
+    "rtl"
   ],
-  "author": "zdy1988 <virus_zhh@126.com>",
-  "main": "dist/vue-jstree.js",
+  "author": "abdullah abunada",
+  "main": "dist/vue-jstree-rtl.js",
   "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zdy1988/vue-jstree.git"
+    "url": "git+https://github.com/abdullah-abunada/vue-jstree.git"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
@@ -34,5 +35,9 @@
     "vue-template-compiler": "^2.3.3",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/abdullah-abunada/vue-jstree/issues"
+  },
+  "homepage": "https://github.com/abdullah-abunada/vue-jstree#readme"
 }

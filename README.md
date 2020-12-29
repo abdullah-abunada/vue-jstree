@@ -1,29 +1,23 @@
-# vue-jstree
+# vue-jstree-rtl
 
 [![npm](https://img.shields.io/npm/dt/vue-jstree.svg?style=flat-square)](https://github.com/zdy1988/vue-jstree)
 
-[English](./README.md)/[中文](./README-CN.md)
-
 ##  Introduction
 
-A tree plugin for vue2
+A tree plugin for vue2 RTL
 
 <img src="./pic.png" width="100%" align=center />
-
-##  DEMO
-
-[http://zdy1988.github.io/vue-jstree](http://zdy1988.github.io/vue-jstree)
 
 ##  NPM
 
 ```html
-    npm install vue-jstree
+    npm install vue-jstree-trl
 ```
 
 ##  ES6
 
 ```html
-    import VJstree from 'vue-jstree'
+    import VJstree from 'vue-jstree-rtl'
     
     new Vue({
       components: {
@@ -42,7 +36,7 @@ A tree plugin for vue2
 ## Usage
 
 ```html
-    <v-jstree :data="data" show-checkbox multiple allow-batch whole-row @item-click="itemClick"></v-jstree>
+    <v-jstree :data="data" size="large" show-checkbox multiple allow-batch whole-row @item-click="itemClick"></v-jstree>
     
     new Vue({
       data: {

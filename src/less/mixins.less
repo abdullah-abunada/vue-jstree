@@ -1,21 +1,21 @@
 .tree-theme (@base-height, @image, @image-height) {
 	@correction: (@image-height - @base-height) / 2;
 
-	.tree-node { min-height:@base-height; line-height:@base-height; margin-left:@base-height + 6; min-width:@base-height; }
+	.tree-node { min-height:@base-height; line-height:@base-height; margin-right:@base-height + 6; min-width:@base-height; }
 	.tree-anchor { line-height:@base-height; height:@base-height; }
 	.tree-icon { width:@base-height; height:@base-height; line-height:@base-height; }
 	.tree-icon:empty { width:@base-height; height:@base-height; line-height:@base-height; }
-	&.tree-rtl .tree-node { margin-right:@base-height; }
+	&.tree-rtl .tree-node { margin-left:@base-height; }
 	.tree-wholerow { height:@base-height; }
 
 	.tree-node,
 	.tree-icon { background-image:url("@{image}"); }
-	.tree-node { background-position:-(@image-height * 9 + @correction) -@correction; background-repeat:repeat-y; }
+	.tree-node { background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAACAQMAAAB49I5GAAAABlBMVEUAAAAdHRvEkCwcAAAAAXRSTlMAQObYZgAAAAxJREFUCNdjAAMOBgAAGAAJMwQHdQAAAABJRU5ErkJggg=="); background-position: 100% 1px; background-repeat:repeat-y; }
 	.tree-last { background:transparent; }
 
-	.tree-open > .tree-ocl { background-position:-(@image-height * 4 + @correction) -@correction; }
-	.tree-closed > .tree-ocl { background-position:-(@image-height * 3 + @correction) -@correction; }
-	.tree-leaf > .tree-ocl { background-position:-(@image-height * 2 + @correction) -@correction; }
+	.tree-open > .tree-ocl { background-position:-(@image-height * 4 + @correction) -@correction; margin-right: -5px}
+	.tree-closed > .tree-ocl { background-position:-(@image-height * 3 + @correction) -@correction; margin-right: -5px}
+	.tree-leaf > .tree-ocl { background-position:-(@image-height * 2 + @correction) -@correction; margin-right: -5px}
 
 	.tree-themeicon { background-position:-(@image-height * 8 + @correction) -@correction; }
 

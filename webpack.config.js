@@ -8,8 +8,8 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     //publicPath: '/dist/',
     publicPath: 'dist/',
-    filename: 'vue-jstree.js',
-    library: 'vue-jstree',
+    filename: 'vue-jstree-rtl.js',
+    library: 'vue-jstree-rtl',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
